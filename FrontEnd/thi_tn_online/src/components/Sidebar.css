@@ -1,0 +1,71 @@
+.sidebar {
+  width: 240px;
+  background: #f8fafc; /* nền xám rất nhạt */
+  border-right: 1px solid #e5e7eb;
+  padding: 20px 16px;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.sidebar-logo img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+
+/* MENU */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* 👈 khoảng cách đúng kiểu Azota */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 48px;
+  padding: 0 14px;
+
+  border-radius: 10px;
+  font-size: 14.5px;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background: #e0f2fe;
+  transform: translateX(2px);
+}
+
+/* ACTIVE */
+.menu-item.active {
+  background: #e0f2fe;
+  color: #0284c7;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.1);
+}
+
+.menu-icon {
+  font-size: 18px;
+  width: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-label {
+  flex: 1;
+}
